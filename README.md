@@ -6,7 +6,7 @@ Web tool for people who want to edit their project online from anywhere in the w
 2. Login/Register/Logout
 3. Workspaces
 4. My ID
-5. Pojects
+5. Projects
 6. Files
 
 ###Basic Functions
@@ -36,3 +36,8 @@ Now we know how to create or delete a workspace, but we have one other thing tha
 From My ID page you will be able to change your Name and Description(Avatar, Password and E-mail will be there but in other release). To go there you will click on the circle with the first letter from your name in the right part of the header. From there click 'Manage your profile' option and you will be in My ID page in seconds.
 
 ![Image of Workspaces tab](http://developer.kynchev.eu/github_images/my-id.PNG)
+
+###Projects
+After you have created a workspace you will need a project to work with. To create one is needed to click on New Project button on the right side of the page. If the project was created it will appear in the page. There is an option for Preview. When you click on it, a new browser tab will open with page where you can select which project you want to view. When you click on a project it will open and reveal the files behind.
+
+![Image of Workspaces tab](http://developer.kynchev.eu/github_images/workspace.PNG)
