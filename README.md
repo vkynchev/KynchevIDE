@@ -18,8 +18,17 @@ KynchevIDE would run on any hosting server whith PHP >= 5.3 and Apache installed
 As long as this is private platform, you will need account to use it. First when you install the IDE you will be asked to register. The position of the first registered user is 'developer' which means that this user has all permissions in the IDE. 
 #####REGISTER
 After you have logged in you can change the position on the other users by clicking their star in tab named People. Also you can invite new people to the IDE. After you clicked the Invite button this window will appear. When you click on 'Generate' a link will appear in the field. User cannot be registered without generated link.
-![Image of People tab](http://developer.kynchev.eu/github_images/people.PNG)
 #####LOGOUT
 You can logout by clicking the circle in the header with the first letter of your name and then by clicking logout.
 
+![Image of People tab](http://developer.kynchev.eu/github_images/people.PNG)
+
 ###Workspaces
+#####CREATE
+In KynchevIDE you will need a workspace to contain your projects. You can have unlimited workspaces and projects. To create one just type the name of it in the 'Workspace name' field and click 'Add'. If the workspace was created successfully, it will appear in the page.
+#####DELETE
+If you want to delete a workspace, you will need to click the trash button under the workspace. A window will show and it will be asking you for password to confirm. Like that anyone other than you cannot delete your workspace. If it was deleted successfully, it will disappear from the page.
+#####OPEN
+Now we know how to create or delete a workspace, but we have one other thing that we can make - to open it and code with love. To open a workspace you will need to click the 'Open' button. After that you will see your projects in the current workspace. To go back to the all workspaces click the home button in the left side of the header.
+
+![Image of Workspaces tab](http://developer.kynchev.eu/github_images/workspaces.PNG)
