@@ -61,7 +61,7 @@ After you have logged in you can change the position on the other users by click
 #####LOGOUT
 You can logout by clicking the circle in the header with the first letter of your name and then by clicking logout.
 
-![Image of People tab](http://developer.kynchev.eu/github_images/people.PNG)
+![Image of People tab](http://webdev.kynchev.eu/github_images/people.PNG)
 
 ###Workspaces
 #####CREATE
@@ -71,12 +71,12 @@ If you want to delete a workspace, you will need to click the trash button under
 #####OPEN
 Now we know how to create or delete a workspace, but we have one other thing that we can make - to open it and code with love. To open a workspace you will need to click the 'Open' button. After that you will see your projects in the current workspace. To go back to the all workspaces click the home button in the left side of the header.
 
-![Image of Workspaces tab](http://developer.kynchev.eu/github_images/workspaces.PNG)
+![Image of Workspaces tab](http://webdev.kynchev.eu/github_images/workspaces.PNG)
 
 ###My ID
 From My ID page you will be able to change your Name and Description(Avatar, Password and E-mail will be there but in other release). To go there you will click on the circle with the first letter from your name in the right part of the header. From there click 'Manage your profile' option and you will be in My ID page in seconds.
 
-![Image of My ID](http://developer.kynchev.eu/github_images/my-id.PNG)
+![Image of My ID](http://webdev.kynchev.eu/github_images/my-id.PNG)
 
 ###Projects
 After you have created a workspace you will need a project to work with. To create one is needed to click on New Project button on the right side of the page. If the project was created it will appear in the page. There is an option for Preview. When you click on it, a new browser tab will open with page where you can select which project you want to view. When you click on a project it will open and reveal the files behind.
@@ -87,7 +87,7 @@ If you are tired of your work on the project and you want to delete it there are
  - The first is to simply click the Remove Project button and verify this operation with your password.
  - The second is to delete all files in the selected project and the IDE will remove it for you.
 
-![Image of Workspace](http://developer.kynchev.eu/github_images/workspace.PNG)
+![Image of Workspace](http://webdev.kynchev.eu/github_images/workspace.PNG)
 
 ###Files
 When you click on a project the files in it will show up. KynchevIDE has integrated code editor and file viewer. If you click on editable file an editor will show up, but if you click on an image or a video file - a viewer will show up. 
@@ -103,12 +103,12 @@ Features:
 * Live syntax checker
 * Autosave on keyup
 
-![Image of Editor](http://developer.kynchev.eu/github_images/edit-file.PNG)
+![Image of Editor](http://webdev.kynchev.eu/github_images/edit-file.PNG)
 
 #####Viewer
 Like the editor there is a viewer for images and videos. To use it simply click on an image or video file and you're done. Now you can view your images or videos direct in your browser.
 
-![Image of Editor](http://developer.kynchev.eu/github_images/view-file.PNG)
+![Image of Editor](http://webdev.kynchev.eu/github_images/view-file.PNG)
 
 #####FILE OPERATIONS
 Create new file:
@@ -117,7 +117,7 @@ Create new file:
  - Last you will need to hit Enter and if everything is ok the file will show up in the list.
  - Tip: To create folders you will need to write the file path for your file. (Ex: new1 > softuniada > `new_folder/file.txt` will create folder `new_folder` and `file.txt` in it)
 
-![Image of Editor](http://developer.kynchev.eu/github_images/add-file.PNG)
+![Image of Editor](http://webdev.kynchev.eu/github_images/add-file.PNG)
 
 Remove file:
  - To remove file is just needed to click on the Remove File button on the right.
