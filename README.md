@@ -1,16 +1,55 @@
 # KynchevIDE
-Web tool for people who want to edit their project online from anywhere in the world. They can work in teams too...
+Kynchev is web-based IDE for web development with small footprint and minimal requirements.
 
 ### Content
-1. Basic Functions
+1. Installation & Requirements
 2. Login/Register/Logout
 3. Workspaces
 4. My ID
 5. Projects
 6. Files
 
-###Basic Functions
-KynchevIDE would run on any hosting server whith PHP >= 5.3 and Apache installed. The IDE needs to be placed in domain/subdomain directory to work - otherwise the AltoRouter won't work. This is private platform for developing web apps.
+###Installation & Requirements
+#####REQUIREMENTS
+KynchevIDE would run on any server where Apache2, MySQL and PHP v5+ are installed. The IDE needs to be placed in domain/subdomain directory to work.
+#####INSTALLATION
+1. Download the KynchevIDE source files from GitHub.
+2. Place the files in domain/subdomain directory. (Ex: http://your-site.com/ or http://kynchev.your-site.com/)
+3. Create MySQL database with tables inside:
+```
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+  `user_password_hash` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `user_email` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+  `user_position` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+  `user_online_timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `info_name` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+  `info_desc` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+  `info_avatar` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`user_id`),
+  UNIQUE KEY `user_name` (`user_name`),
+  UNIQUE KEY `user_email` (`user_email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='user data' AUTO_INCREMENT=1 ;
+```
+```
+
+--
+-- Table structure for table `invites`
+--
+
+CREATE TABLE IF NOT EXISTS `invites` (
+  `invite_id` int(11) NOT NULL AUTO_INCREMENT,
+  `invite_value` varchar(64) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `invite_create` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`invite_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+```
 
 ###Login/Register/Logout
 #####LOGIN
