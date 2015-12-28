@@ -76,9 +76,53 @@ Now we know how to create or delete a workspace, but we have one other thing tha
 ###My ID
 From My ID page you will be able to change your Name and Description(Avatar, Password and E-mail will be there but in other release). To go there you will click on the circle with the first letter from your name in the right part of the header. From there click 'Manage your profile' option and you will be in My ID page in seconds.
 
-![Image of Workspaces tab](http://developer.kynchev.eu/github_images/my-id.PNG)
+![Image of My ID](http://developer.kynchev.eu/github_images/my-id.PNG)
 
 ###Projects
 After you have created a workspace you will need a project to work with. To create one is needed to click on New Project button on the right side of the page. If the project was created it will appear in the page. There is an option for Preview. When you click on it, a new browser tab will open with page where you can select which project you want to view. When you click on a project it will open and reveal the files behind.
+#####DOWNLOAD PROJECT
+If you want to download a full copy of your project then you can click on the Download Project Button. It's simple!
+#####REMOVE PROJECT
+If you are tired of your work on the project and you want to delete it there are two ways:
+ - The first is to simply click the Remove Project button and verify this operation with your password.
+ - The second is to delete all files in the selected project and the IDE will remove it for you.
 
-![Image of Workspaces tab](http://developer.kynchev.eu/github_images/workspace.PNG)
+![Image of Workspace](http://developer.kynchev.eu/github_images/workspace.PNG)
+
+###Files
+When you click on a project the files in it will show up. KynchevIDE has integrated code editor and file viewer. If you click on editable file an editor will show up, but if you click on an image or a video file - a viewer will show up. 
+#####Editor
+In the IDE is included the ACE editor.
+Features:
+* Supports over 100 languages
+* Search & Replace function
+* Autocomplete
+* Integrated snippets
+* Code highlighting
+* Multiple cursors
+* Live syntax checker
+* Autosave on keyup
+
+![Image of Editor](http://developer.kynchev.eu/github_images/edit-file.PNG)
+
+#####Viewer
+Like the editor there is a viewer for images and videos. To use it simply click on an image or video file and you're done. Now you can view your images or videos direct in your browser.
+
+![Image of Editor](http://developer.kynchev.eu/github_images/view-file.PNG)
+
+#####FILE OPERATIONS
+Create new file:
+ - Just click on New File button on the right.
+ - Then type the name of your file in the field on top of the file explorer.
+ - Last you will need to hit Enter and if everything is ok the file will show up in the list.
+ - Tip: To create folders you will need to write the file path for your file. (Ex: new1 > softuniada > `new_folder/file.txt` will create folder `new_folder` and `file.txt` in it)
+
+![Image of Editor](http://developer.kynchev.eu/github_images/add-file.PNG)
+
+Remove file:
+ - To remove file is just needed to click on the Remove File button on the right.
+ - The button will be active when a file is opened in editor or viewer.
+
+Upload file:
+ - Just drag 'n drop file to the browser.
+ - Wait and it will de uploaded to the current directory.
