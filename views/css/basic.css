@@ -1,0 +1,343 @@
+@import url(font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic);
+[class*="fa-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar{ 
+  width: 6px;
+  height: 6px
+  background-color: rgba(149, 165, 166, 0.05);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgba(149, 165, 166, 0.4);
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: rgba(149, 165, 166, 0.8);
+}
+
+::-webkit-scrollbar-thumb:active{
+  background-color: rgba(127, 140, 141, 0.8);
+} 
+
+html {
+  height: 100%;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #f4f6fc;
+  
+  font: 400 0.875rem/1.5 'Open Sans', sans-serif;
+  margin: 0;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  outline: 0;
+  text-decoration: none;
+}
+
+a:focus, a:hover {
+  text-decoration: underline;
+}
+
+input {
+  border: 0;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  -webkit-transition: all .3s;
+          transition: all .3s;
+  box-sizing: border-box;
+}
+
+input.under {
+  border-bottom: 1px dashed transparent;
+}
+
+input[type="text"].under:hover, input[type="text"].under:focus {
+  border-bottom: 1px dashed #B1A9AB;
+}
+
+.shadow-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.shadow-2 {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.shadow-3 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.shadow-4 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.shadow-5 {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.header {
+  height: 64px;
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #3498db;
+  display: flex;
+  justify-content: space-between;
+  line-height: 64px;
+}
+
+.header .part {
+  display: flex;
+  align-items: center;
+}
+
+.left-header {
+  height: 100%;
+  width: 100px;
+  justify-content: flex-start;
+}
+
+.left-header .home-btn {
+  margin-left: 1rem;
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.left-header .home-btn:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+.center-header {
+  height: 100%;
+  width: 100%;
+  max-width: 800px;
+  justify-content: space-between;
+}
+
+.center-header a{
+  color: white;
+  text-decoration: none;
+  margin: 1rem;
+  font-size: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.center-header a.active:before{
+  opacity: 1;
+  width: 100%;
+  left: 0;
+}
+
+.center-header a:hover:before{
+  opacity: 1;
+  width: 100%;
+  left: 0;
+}
+
+.center-header a:before{
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 20%;
+  height: 2px;
+  left: 50%;
+  bottom: 12px;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.center-header a:first-child{
+  margin-left: 0px;
+}
+
+.center-header a:last-child{
+  margin-right: 0px;
+}
+
+.right-header {
+  height: 100%;
+  width: 100px;
+  justify-content: flex-end;
+}
+
+.right-menu-toggle {
+  width: 36px;
+  height: 36px;
+  margin-right: 1rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3498db;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.right-menu-toggle.visible {
+  background-color: white;
+  color: #3498db;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.right-menu-toggle:hover {
+  background-color: white;
+  color: #3498db;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.right-menu {
+  width: 350px;
+  height: calc(100vh - 64px);
+  background-color: #2c3e50;
+  position: fixed;
+  bottom: 0px;
+  right: -350px;
+  transition: all 0.2s ease-in-out;
+  z-index: 10;
+}
+
+.right-menu.visible {
+  right: 0px;
+}
+
+.right-menu .logout {
+  height: 53px;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.right-menu .logout:hover {
+  text-decoration: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.right-menu .card-link {
+  text-decoration: none;
+}
+
+
+.right-menu .card {
+  height: 64px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 1rem 0 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.right-menu .card:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.right-menu .card .icon{
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  color: white;
+}
+
+.right-menu .card .icon i{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //border: 2px solid white;
+  border-radius: 50%;
+  background-color: #3498DB;
+  font-size: 25px;
+  color: white;
+}
+
+.right-menu .card .info{
+  height: 64px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.right-menu .card .info .title{
+  font-weight: bold;
+  color: white;
+}
+
+.right-menu .card .info .description{
+  font-weight: normal;
+  color: #6E8EAF;
+}
+
+
+.page {
+  width: 100vw;
+  padding: 120px 0px 54px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.page-box {
+  width: 100%;
+  max-width: 800px;
+  margin: 0px 20px;
+  padding: 2rem 4rem;
+  background-color: white;
+  border: 1px solid #dadfe9;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.right-options {
+  width: 140px;
+  margin-right: -140px;
+}
+
+@media screen and ( max-width: 1023px ){
+  .right-options {
+    display: none;
+  }
+}
