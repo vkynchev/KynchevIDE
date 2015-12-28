@@ -13,9 +13,9 @@ Kynchev is web-based IDE for web development with small footprint and minimal re
 #####REQUIREMENTS
 KynchevIDE would run on any server where Apache2, MySQL and PHP v5+ are installed. The IDE needs to be placed in domain/subdomain directory to work.
 #####INSTALLATION
-1. Download the KynchevIDE source files from GitHub.
-2. Place the files in domain/subdomain directory. (Ex: http://your-site.com/ or http://kynchev.your-site.com/)
-3. Create MySQL database with tables inside:
+* Download the KynchevIDE source files from GitHub.
+* Place the files in domain/subdomain directory. (Ex: http://your-site.com/ or http://kynchev.your-site.com/)
+* Create MySQL database with tables inside:
 ```
 
 --
@@ -50,6 +50,8 @@ CREATE TABLE IF NOT EXISTS `invites` (
   PRIMARY KEY (`invite_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 ```
+* Update database information in `/config/db.php`. 
+* Open KynchevIDE. (Ex: http://your-site.com/ or http://kynchev.your-site.com/)
 
 ###Login/Register/Logout
 #####LOGIN
