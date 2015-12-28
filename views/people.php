@@ -69,7 +69,7 @@
 					
 					$sql = "SELECT *
 			                        FROM users
-			                        ORDER BY info_name desc, user_name desc;";
+			                        ORDER BY info_name, user_name;";
                                         $result_users = $db_connection->query($sql);
                                         $result_users_count = $result_users->num_rows;
 
